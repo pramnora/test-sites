@@ -3,14 +3,19 @@
 <html lang="en">
 
 
- 
-<!--EXPLANATORY COMMENTS...   
+
+
+ <!--EXPLANATORY COMMENTS...   
+
  (This is a single page web site.)   
  
  This is a simple and straight forwards 'Table Of Contents' style menu...;    
  which allows the user to 'click'/jump to any selected part of the web page...;    
  in order to find anything they want both very quickly and easily.  
--->
+
+ It uses minimal CSS...
+
+ -->
 
 
 
@@ -28,33 +33,24 @@
 
   <title>Your Name Web Site, TOC Menu 01</title> 
 
-  <!-- stylesheet -->
+  <!-- CSS stylesheet code -->
 
   <style>
-
+ 
    /* links */
 
    a:link{color:blue;text-decoration:none;}
-   a:hover{color:black;background-color:white;text-decoration:underline;}
-   a:active{color:red;}
+   a:active{color:yellow;}
    a:visited{color:purple;}
+   a:hover{color:red;text-decoration:underline;}
 
-   nav{border-radius:10px 10px 0px 0px;background-color:silver;color:black;border:1px solid black;padding:20px;text-align:left;}
+   /* other */
 
-   body{margin:20px;font-family:arial,verdana,sans-serif;background-color:black;color:silver;}
+   header,.clsParaImage{text-align:center}
+   footer{text-align:center;}
+   .clsCopyright{background-color:black;color:white;}
 
-   header{text-align:center;}
-
-   h1{color:white;}
-   h2{text-indent:1cm;font-style:italic;background-color:grey;color:black;}
-
-   footer{border-radius: 0px 0px 10px 10px; background-color:silver;color:black;border:1px solid black;padding:20px;text-align:right;}
-
-   /* classes */
-
-   .clsCopyright{background-color:black;color:white;font-weight:bold;}
-
-   .clsTimeDateStamp{color:red;font-style:italic;}
+   .clsHr50{width:50%;}
 
   </style>
 
@@ -77,7 +73,7 @@
     Your Name Web Site
    </h1>
 
-   <p>
+   <p class="clsParaImage">
     <a href="toc-menu-01-graphic.png">
      <img src="toc-menu-01-graphic.png" width="250" border="1">
     </a>
@@ -85,6 +81,7 @@
 
   </header>
 
+  <hr class="clsHr50">
 
 
 
@@ -136,6 +133,7 @@
 
 
 
+   <hr>
 
 
 
@@ -151,6 +149,11 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
 
     <a name="heading-name-1:link-name-2"></a>
     <a name="heading-name-1:subTitle-heading-2"></a>
@@ -160,7 +163,12 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
-   
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
+      
     <a name="heading-name-1:link-name-3"></a>
     <a name="heading-name-1:subTitle-heading-3"></a>
     <h3>Sub-title heading 3</h3>
@@ -169,15 +177,20 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
 
    </blockquote>
 
-   <p>
-    <a href="#top">
-     -Click here to return to top...
-    </a>
-   </p>
 
+
+
+
+
+   <hr>
 
 
 
@@ -195,6 +208,12 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
+
 
     <a name="heading-name-2:subTitle-heading-2"></a>
     <h3>Sub-title heading 2</h3>
@@ -203,6 +222,11 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
    
     <a name="heading-name-2:subTitle-heading-3"></a>
     <h3>Sub-title heading 3</h3>
@@ -211,15 +235,18 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
 
    </blockquote>
 
-   <p>
-    <a href="#top">
-     -Click here to return to top...
-    </a>
-   </p>
 
+
+
+   <hr>
 
 
 
@@ -236,6 +263,12 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
+
 
     <a name="heading-name-3:subTitle-heading-2"></a>
     <h3>Sub-title heading 2</h3>
@@ -244,6 +277,11 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
    
     <a name="heading-name-3:subTitle-heading-3"></a>
     <h3>Sub-title heading 3</h3>
@@ -252,26 +290,39 @@
       This is a short paragraph of text.
      </p>
     </blockquote>
+    <p>
+     <a href="#top">
+      -Click here to return to top...
+     </a>
+    </p>
 
    </blockquote>
 
-   <p>
-    <a href="#top">
-     -Click here to return to top...
-    </a>
-   </p>
 
 
 
 
 
-   <footer class="clsRight">
+   <hr class="clsHr50">
+
+
+
+
+
+   <footer>
 
     <p>
 
      Email: 
      <a href="mailto:yourName@yourEmailAddress.com">
       yourName@yourEmailAddress.com
+     </a>
+
+     <br>
+
+     URL:
+     <a href="https://yourSiteName.netlify.com">
+      https://yourSiteName.netlify.com
      </a>
 
      <br>
@@ -283,23 +334,16 @@
 
      <br>
 
-     URL:
-     <a href="https://yourSiteName.netlify.com">
-      https://yourSiteName.netlify.com
-     </a>
-
-     <hr>
-
      Page created: 
      <span class="clsTimeDateStamp">
-      09:51 30/06/2023
+      11:25 30/06/2023
      </span>
 
      <br>
 
      Last updated: 
      <span class="clsTimeDateStamp">
-      09:51 30/06/2023
+      11:25 30/06/2023
      </span>
 
     </p>
